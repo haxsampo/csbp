@@ -36,6 +36,7 @@ def create_new(request):
         aika = str(datetime.now(tz=tzutc()))
         insert = f"INSERT INTO polls_question (id, question_text, pub_date) VALUES ( {str(newid)}, {str(new_q)}, {aika} )"
         x = Question.objects.raw( insert)
+        #Question.objects.create(question_text=new_q, pub_date=aika)
         haettu = Question.objects.get(pk=newid)
         haettu.save()
 
