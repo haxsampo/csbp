@@ -1,6 +1,10 @@
-Writer of this essay used OWASP 2012 top ten list. 
+LINK: https://github.com/haxsampo/csbp
+\*\*\*Installation instructions: when cloned the server should run with
+`python manage.py runserver`
 
-1. csrf
+Writer of this essay used OWASP 2012 top ten list.
+
+FLAW 1. csrf
    @csrf_exempt remove those
 
 2. A09:2021-Security Logging and Monitoring Failures
